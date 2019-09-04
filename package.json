@@ -12,6 +12,7 @@
     "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
@@ -42,11 +43,11 @@
       "path": "node_modules/cz-customizable"
     }
   },
-"husky": {
-  "hooks": {
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-  }  
-},
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "postcss": {
     "plugins": {
       "autoprefixer": {}
